@@ -1,0 +1,22 @@
+#!/bin/bash
+
+tmux kill-server
+
+cd ~
+
+tmux new-session -d
+
+tmux select-window -t 0:1
+
+tmux split-pane -h
+tmux split-pane -v
+
+tmux select-pane -t 2
+tmux send-keys 'man tmux' Enter
+
+tmux select-pane -t 3
+tmux send-keys 'journalctl -f' Enter
+
+tmux select-pane -t 1
+
+tmux attach -t 0
