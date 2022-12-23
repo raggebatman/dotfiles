@@ -14,12 +14,14 @@ alias sudo='sudo -v; sudo '
 
 # Check if we're logging in from tty1
 if [[ "$(tty)" == "/dev/tty1" ]]; then
+  # Add local binaries to path
+  export PATH="$PATH:~/.local/bin"
 
   # Attach to tmux or make a fresh one if it's not there
   tmux has-session 2>/dev/null
 
   if [[ $? != 0 ]]; then
-    ~/.local/bin/tmux-fresh
+    tmux-fresh
   else
     tmux attach
   fi
