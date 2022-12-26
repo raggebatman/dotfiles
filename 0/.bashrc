@@ -12,11 +12,11 @@ PS1='[\u@\h \W]\$ '
 # Refresh the password prompt timeout on sudo
 alias sudo='sudo -v; sudo '
 
+# Modify PATH
+export PATH="$PATH:~/.local/bin"
+
 # Check if we're logging in from tty1
 if [[ "$(tty)" == "/dev/tty1" ]]; then
-  # Add local binaries to path
-  export PATH="$PATH:~/.local/bin"
-
   # Attach to tmux or make a fresh one if it's not there
   tmux has-session 2>/dev/null
 
