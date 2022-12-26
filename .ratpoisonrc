@@ -1,0 +1,114 @@
+# ------------- #
+# miscellaneous #
+# ------------- #
+
+escape C-t
+
+# -------------- #
+# unbinding keys #
+# -------------- #
+
+unbind b
+unbind c
+unbind n
+unbind p
+unbind k
+unbind K
+unbind s
+unbind S
+unbind Tab
+unbind Left
+unbind Up
+unbind Right
+unbind Down
+unbind Q
+unbind 0
+unbind C-g
+unbind F
+unbind C-Left
+unbind C-Up
+unbind C-Right
+unbind C-Down
+unbind exclam
+unbind C-exclam
+unbind f
+unbind i
+unbind m
+unbind V
+unbind C-t
+unbind t
+unbind N
+unbind Q
+unbind p
+unbind space
+unbind n
+unbind Return
+unbind l
+unbind U
+unbind R
+unbind s
+unbind a
+unbind A
+unbind underscore
+unbind u
+unbind w
+unbind C-A
+unbind C-K
+unbind minus
+unbind C-a
+unbind C-b
+unbind C-Return
+unbind C-c
+unbind C-i
+unbind C-n
+unbind C-p
+unbind apostrophe
+unbind C-apostrophe
+unbind C-m
+unbind C-space
+unbind v
+unbind V
+unbind C-k
+unbind C-l
+unbind C-V
+unbind C-w
+unbind C-s
+unbind C-S
+unbind M-Tab
+unbind C-f
+unbind C-r
+unbind u
+unbind P
+unbind C-underscore
+unbind C-u
+
+# ------------ #
+# binding keys #
+# ------------ #
+
+bind Escape abort
+
+bind x delete
+bind X kill
+bind C-x quit
+
+bind M-h exchangeleft
+bind M-j exchangedown
+bind M-k exchangeup
+bind M-l exhangeright
+
+bind h focusleft
+bind j focusdown
+bind k focusup
+bind l focusright
+
+bind C-v hsplit
+bind C-h vsplit
+
+bind space lastmsg
+
+# ------- #
+# startup #
+# ------- #
+
+exec xterm -e "tmux-init; bash"

@@ -17,12 +17,14 @@ export PATH="$PATH:~/.local/bin"
 
 # Check if we're logging in from tty1
 if [[ "$(tty)" == "/dev/tty1" ]]; then
-  # Attach to tmux or make a fresh one if it's not there
-  tmux has-session 2>/dev/null
 
-  if [[ $? != 0 ]]; then
-    tmux-fresh
-  else
-    tmux attach
-  fi
+  startx
+
+  #tmux has-session 2>/dev/null
+
+  #if [[ $? != 0 ]]; then
+  #  ratpoison -c "exec xterm -e 'tmux-fresh; bash'"
+  #else
+  #  ratpoison -c "exec xterm -e 'tmux attach; bash'"
+  #fi
 fi

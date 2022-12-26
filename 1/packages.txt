@@ -1,3 +1,0 @@
-awesome
-xorg-xinit
-xf86-video-intel

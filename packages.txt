@@ -1,0 +1,12 @@
+tmux
+elinks
+vim
+xf86-video-intel
+xorg-server
+xorg-xinit
+xorg-setxkbmap
+xorg-xinput
+xterm
+ratpoison
+ttf-linux-libertine
+dina-font

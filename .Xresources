@@ -1,0 +1,37 @@
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: false
+XTerm.vt100.utf8: true
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+
+/*
+ *  Colour  Normal  Bright
+ *  black   0       8
+ *  red     1       9
+ *  green   2       10
+ *  yellow  3       11
+ *  blue    4       12
+ *  purple  5       13
+ *  cyan    6       14
+ *  white   7       15
+ * */
+
+XTerm.vt100.foreground: white
+XTerm.vt100.background: black
+XTerm.vt100.color0: #000000
+XTerm.vt100.color1: #cc0000
+XTerm.vt100.color2: #4e9a06
+XTerm.vt100.color3: #c4a000
+XTerm.vt100.color4: #729fcf
+XTerm.vt100.color5: #75507b
+XTerm.vt100.color6: #06989a
+XTerm.vt100.color7: #d3d7cf
+XTerm.vt100.color8: #555753
+XTerm.vt100.color9: #ef2929
+XTerm.vt100.color10: #8ae234
+XTerm.vt100.color11: #fce94f
+XTerm.vt100.color12: #32afff
+XTerm.vt100.color13: #ad7fa8
+XTerm.vt100.color14: #34e2e2
+XTerm.vt100.color15: #ffffff

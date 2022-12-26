@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Check if a session exists already
+tmux has-session 2>/dev/null
+
+if [[ $? != 0 ]]; then
+    # There is not a session;
+    # create a new one
+    tmux kill-server
+
+    cd ~
+
+    tmux new-session -d
+
+    tmux select-window -t 0:1
+
+    tmux split-pane -h
+    tmux split-pane -v
+
+    tmux select-pane -t 2
+    tmux send-keys 'top' Enter
+
+    tmux select-pane -t 3
+    tmux send-keys 'journalctl -f' Enter
+
+    tmux select-pane -t 1
+
+    tmux attach -t 0
+else
+    # There is a session;
+    # attach to it
+    tmux attach
+fi
