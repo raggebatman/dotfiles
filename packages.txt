@@ -9,4 +9,3 @@ xorg-xinput
 xterm
 ratpoison
 ttf-linux-libertine
-dina-font
